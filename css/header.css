@@ -1,0 +1,194 @@
+header {
+  width:100%;
+  margin:0px auto;
+  position: relative;
+}
+header article {
+  width:80%;
+  position: relative;
+  left:50%;
+  transform:translate(-50%);
+}
+header article .content{
+  padding:100px 0;
+}
+header article .textwrap {
+  width:50%;
+  padding: 40px 40px 40px 100px;
+  position: absolute; top:50%; right:0;
+  transform: translateY(-50%);
+}
+header article .textwrap h1 {
+  font-size: 2vw;
+  font-weight: 400;
+  margin-bottom:10px;
+}
+header article .textwrap h5 {
+  color:#097c25;
+  font-size: .8vw;
+}
+header article .textwrap p {
+  font-size:.85vw;
+  line-height: 170%;
+  font-weight: 300;
+}
+header article .textwrap a {
+  border:1px solid #353535;
+  width:200px;
+  text-align: center;
+  padding: 10px 0;
+  margin:30px 0px;
+  display: block;
+  transition:all 0.5s ease;
+  position: absolute;
+  border-radius: 5px;
+}
+header article .textwrap a:hover {
+  background:#097c25;
+  border: none;
+  color:white;
+  cursor: pointer;
+}
+
+header article .slide {
+  width:35%;
+  text-align: center;
+  position: relative;
+  left:25%;
+  transform: translateX(-50%);
+}
+header article .slide .slidewrap{
+  width:100%;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px gray;
+}
+header article .slide ul {
+  width:400%;
+  font-size: 0;
+  margin-left:-100%;
+  position: relative;
+}
+header article .slide ul li{
+  float: left;
+  margin: 0; width:25%;
+}
+header article .slide ul li:hover img {
+  transform: scale(1.02);
+}
+header article .slide img {
+  width:100%;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  pointer-events: none;
+}
+header article i.fa {
+  position: absolute; top:50%;
+  font-size: 2em;
+  cursor: pointer;
+  width:30px;
+}
+header article .right {
+  right:-75px;
+}
+header article .left {
+  left:-75px;
+}
+
+@media screen and (max-width: 1600px) {
+  header article {
+    width:90%;
+  }
+  header article .textwrap h1 {
+    font-size: 2.5vw;
+  }
+  header article .textwrap h5 {
+    font-size:1.1vw;
+  }
+  header article .textwrap p {
+    font-size:1.1vw;
+  }
+  header article .textwrap a {
+    font-size:0.9em;
+    padding: 10px 0 ;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header .section_name {
+    display:none;
+  }
+  header article {
+    width:90%;
+    margin-top:0px;
+    padding-top:0;
+  }
+  header article .textwrap {
+    position: relative;
+    top:0;
+    transform:translateY(0);
+    width:100%; padding:5%;
+    margin-top:15px;
+  }
+  header article .textwrap h1 {
+    font-size: 3vw;
+    margin-bottom:5px;
+  }
+  header article .textwrap p {
+    font-size: 2vw;
+  }
+  header article .textwrap a {
+    width:90%;
+    font-size: 2vw;
+    padding: 10px 0 ;
+    margin:30px 0px;
+  }
+  header article .slide {
+    width:60%;
+    left:50%;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  header .section_name {
+    display:none;
+  }
+  header article {
+    width:100%;
+  }
+  header article .content{
+    padding:75px 0;
+  }
+  header article .textwrap {
+    position: relative;
+    top:0;
+    transform:translateY(0);
+    width:100%; padding:5%;
+    margin-top:30px;
+  }
+  header article .textwrap h5 {
+    font-size:.9em;
+  }
+  header article .textwrap h1 {
+    font-size: 6vw;
+    margin-bottom:5px;
+  }
+  header article .textwrap p {
+    font-size: 1em;
+  }
+  header article .textwrap a {
+    width:90%;
+    font-size: 1em;
+    padding: 10px 0 ;
+    margin:15px 0px;
+  }
+  header article .slide {
+    width:70%;
+    left:50%;
+  }
+  header article .right {
+    right:-45px;
+  }
+  header article .left {
+    left:-45px;
+  }
+}

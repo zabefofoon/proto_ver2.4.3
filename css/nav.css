@@ -1,0 +1,29 @@
+nav {position: fixed; top:40px; left:50px; z-index: 99;}
+nav i.fa-bars { cursor: pointer;}
+nav i:hover,nav i:hover span{font-weight: 700;}
+nav span {font-weight:400; letter-spacing: 0.5em; margin-left:1em; pointer-events: none;}
+nav .navwrap {width:25%; height:100vh;
+              background: white;
+              position: fixed; top:0; left:-100%;
+              box-shadow: 5px 5px 5px black;}
+nav .navwrap ul {position: absolute; left:50%; top:50%; text-align: center;
+                 transform: translate(-50%,-50%); font-size: 2em;}
+nav .navwrap ul li {margin:10px 0; cursor: pointer;}
+nav .navwrap ul li:hover {font-weight: 700;}
+
+@media screen and (max-width: 1600px) {
+  nav .navwrap {width:30%;}
+  nav i {font-size: 2em;}
+}
+
+@media screen and (max-width: 1024px) {
+  nav .navwrap {width:60%;}
+  nav span {display: none;}
+}
+
+@media screen and (max-width: 512px) {
+  nav {position: fixed; top:30px; left:5%;}
+  nav i.fa-bars {font-size: 1.5em;}
+  nav .navwrap {width:90%;}
+
+}

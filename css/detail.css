@@ -1,0 +1,117 @@
+.detail {
+  width:80vw; height:90vh;
+  background: #f2f2f6;
+  position: fixed; top:50%; left:50%;
+  transform:translate(-50%,-50%);
+  z-index: -1;
+  display: none;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.detail article{
+  padding: 2%;
+  height:100%;
+  margin:0 auto;
+  position: relative;
+}
+.detail article .textcontain{
+  position: relative;
+  height:33%;
+}
+.detail article .textwrap{
+  width:31%;
+  height:90%;
+  float: left;
+  margin:10px;
+  padding-top:10px;
+}
+
+.detail article .imgwrap{
+  width:100%;
+  height:60%;
+  position: relative;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.detail article .imgwrap img{
+  height:95%;
+  margin:0 10px;
+  box-shadow: 0 5px 10px gray;
+}
+.detail article .imgwrap iframe{
+  width:40%;
+  height:95%;
+  margin:0 10px;
+  box-shadow: 0 5px 10px gray;
+}
+.detail article .textwrap .description{
+  font-weight: 300;
+  color:#353535;
+}
+
+.detail article .textwrap .kategorie{
+  color:#097c25;
+  font-weight: 500;
+}
+.detail article .textwrap .name{
+  font-size:1.2em;
+}
+.detail article .textwrap .email{
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1600px) {
+  .detail article .textwrap .description{
+    font-size: .9em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .detail article .textwrap .description{
+    font-size: 1em;
+  }
+  .detail article .textcontain{
+    height:25%;
+  }
+  .detail article .deswrap{
+    width:60%;
+  }
+  .detail article .imgwrap{
+    width:100%;
+    height:70%;
+    overflow-x: scroll;
+    white-space:normal;
+  }
+  .detail article .imgwrap iframe{
+    width:100%;
+    height:70%;
+    margin:10px 0;
+  }
+  .detail article .imgwrap img{
+    height:auto;
+    width:100%;
+    margin:10px 0px;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .detail{
+    width:90%;
+    overflow: scroll;
+  }
+  .detail article .textwrap{
+    width:100%;
+    margin:0px;
+  }
+  .detail article .deswrap{
+    height:260px;
+    font-size:.95em;
+  }
+  .detail article .imgwrap{
+    width:100%;
+    height:70%;
+    overflow: visible;
+    white-space:normal;
+  }
+}
