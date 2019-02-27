@@ -27,25 +27,39 @@ section.sec2 article i.left{
 }
 section.sec2 article .slide2 .slidewrap{
   width:100%;
-  box-shadow:0 5px 10px gray;
+  box-shadow:0 5px 10px #cccccc;
   overflow: hidden;
 }
 
 section.sec2 article .slide2 .slidewrap ul{
   width:700%;
-  background: orange;
-  font-size: 0;
   position: relative;
   margin-left: -100%;
+  font-size: 0;
 }
 section.sec2 article .slide2 .slidewrap ul li{
-  display: inline-block;
+  display:inline-block;
   width:calc(100% / 7);
-  background: green;
+  position: relative;
 }
 section.sec2 article .slide2 .slidewrap ul li img{
   width:100%;
-  border:1px solid #353535;
+  transition: all .5s ease;
+}
+section.sec2 article .slide2 .slidewrap ul li img:hover{
+  transform:scale(1.01);
+}
+section.sec2 article .slide2 .slidewrap ul li p{
+  border-top:1px solid black;
+  padding:10px;
+  width:100%;
+  font-size: 1rem;
+  z-index: 1;
+  font-weight: 500;
+}
+section.sec2 article .slide2 .slidewrap ul li p span{
+  font-size:.9rem;
+  font-weight: 300;
 }
 @media screen and (max-width: 1600px) {
   section.sec2 article{
