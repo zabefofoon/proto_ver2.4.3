@@ -31,6 +31,7 @@ section.sec1 .thumbnail li p span {font-weight: 300;}
 section.sec1 .thumbnail li img {width:100%; transition:all 0.5s ease; pointer-events: none;}
 
 @media screen and (max-width: 1600px) {
+  section.sec1 .banner2 {width:90%;}
   section.sec1 article {width:90%;}
   section.sec1 .button li {width:100px; height:28px; font-size: 0.9em;}
   section.sec1 .thumbnail li {width:24%; margin:0.2%;}

@@ -32,14 +32,14 @@ section.sec2 article .slide2 .slidewrap{
 }
 
 section.sec2 article .slide2 .slidewrap ul{
-  width:700%;
+  width:1100%;
   position: relative;
   margin-left: -100%;
   font-size: 0;
 }
 section.sec2 article .slide2 .slidewrap ul li{
   display:inline-block;
-  width:calc(100% / 7);
+  width:calc(100% / 11);
   position: relative;
 }
 section.sec2 article .slide2 .slidewrap ul li img{
@@ -64,6 +64,7 @@ section.sec2 article .slide2 .slidewrap ul li p span{
 @media screen and (max-width: 1600px) {
   section.sec2 article{
     height:80vh;
+    width:90%;
   }
   section.sec2 article .slide2{
     width:50%;
