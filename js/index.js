@@ -5,12 +5,11 @@ $(document).ready(function(){
       if(e.target == $(".slide ul li")[0] && e.target.value == num || e.target == $(".thumbnail li")[num]){
         $(".fullsolid").css({"opacity":"0.8","pointer-events":"auto"});
         $(".detail").css({"display":"block","z-index":99}).delay(300).animate({"opacity":1});
-        $(".detail").scrollTop(0).load(`./data/${num+1}.html`);
+        $(".detail").scrollTop(0).load("./data/"+parseInt(num+1)+".html");
         $(".fa-times").css({"display":"block","z-index":"99"});
         $("html").addClass('modal-open');
       }
     }
-
     for(var i=0;i<$(".thumbnail li").length;i++){
       thumbnail_slide(i)
     };
