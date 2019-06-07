@@ -1,6 +1,6 @@
 $(document).ready(function(){
   var c = $('html').scrollTop();
-  $(window).on("click touchstart",function(e){
+  $(window).click(function(e){
     function thumbnail_slide(num){
       if(e.target == $(".slide ul li")[0] && e.target.value == num || e.target == $(".thumbnail li")[num]){
         $(".fullsolid").css({"opacity":"0.8","pointer-events":"auto"});
