@@ -22,11 +22,16 @@
   <body>
     <div class="detail">
     </div>
-    <i class="fa fa-times"></i>
+    <i class="fa fa-times" onclick=`$(".navwrap").stop().animate({"left":"-100%"},500);
+    $(".fullsolid").css({"opacity":"0","pointer-events":"none"});
+    $(".detail").css({"display":"none","z-index":-1,"opacity":0});
+    $(".fa-times").css({"display":"none","z-index":"-1"});
+    $("html").removeClass('modal-open');`></i>
     <div class="fullsolid"></div>
     <a href="#home"><i class="fa fa-chevron-up up"></i></a>
     <nav>
-      <i class="fa fa-bars"><span>MENU</span></i>
+      <i class="fa fa-bars" style='cursor:pointer;' onclick='$(".navwrap").stop().animate({"left":0},500);
+      $(".fullsolid").css({"opacity":"0.8","pointer-events":"auto"});'><span>MENU</span></i>
       <div class="navwrap">
         <ul>
           <li><a href="#home">Home</a></li>
@@ -82,63 +87,63 @@
           <li value="5">Planning</li>
         </ul>
         <ul class="thumbnail">
-          <li value="1" style='cursor:pointer;'>
+          <li value="1" style='cursor:pointer;' onclick='thumbnail_slide(0)'>
             <img src="https://zabefofoon.github.io/proto_images/imgs/thumb1.png">
             <p><span>Poster</span><br>오랜 날 오랜 밤</p>
           </li>
-          <li value="2" style='cursor:pointer;'>
+          <li value="2" style='cursor:pointer;' onclick='thumbnail_slide(1)'>
             <img src="https://zabefofoon.github.io/proto_images/imgs/thumb2.png">
             <p><span>Charactor</span><br/>칠성마을의 아기수호천사</p>
           </li>
-          <li value="1" style='cursor:pointer;'>
+          <li value="1" style='cursor:pointer;' onclick='thumbnail_slide(2)'>
             <img src="https://zabefofoon.github.io/proto_images/imgs/thumb3.png">
             <p><span>Poster</span><br/>우리의 칠성</p>
           </li>
-          <li value="2" style='cursor:pointer;'>
+          <li value="2" style='cursor:pointer;' onclick='thumbnail_slide(3)'>
             <img src="https://zabefofoon.github.io/proto_images/imgs/thumb4.png">
             <p><span>Charactor</span><br/>여전한 김칠성씨</p>
           </li>
-          <li value="1" style='cursor:pointer;'>
+          <li value="1" style='cursor:pointer;' onclick='thumbnail_slide(4)'>
             <img src="https://zabefofoon.github.io/proto_images/imgs/thumb5.png">
             <p><span>Poster</span><br/>너에게 줄 사이다</p>
           </li>
-          <li value="5" style='cursor:pointer;'>
+          <li value="5" style='cursor:pointer;' onclick='thumbnail_slide(5)'>
             <img src="https://zabefofoon.github.io/proto_images/imgs/thumb6.png">
             <p><span>Planning</span><br/>D.I.Y(Design It Your Story)</p>
           </li>
-          <li value="2" style='cursor:pointer;'>
+          <li value="2" style='cursor:pointer;' onclick='thumbnail_slide(6)'>
             <img src="https://zabefofoon.github.io/proto_images/imgs/thumb7.png">
             <p><span>Charactor</span><br/>사이다 - 찬스</p>
           </li>
-          <li value="3" style='cursor:pointer;'>
+          <li value="3" style='cursor:pointer;' onclick='thumbnail_slide(7)'>
             <img src="https://zabefofoon.github.io/proto_images/imgs/thumb8.PNG">
             <p><span>Video</span><br/>Let Me 사이다 Again</p>
           </li>
-          <li value="1" style='cursor:pointer;'>
+          <li value="1" style='cursor:pointer;' onclick='thumbnail_slide(8)'>
             <img src="https://zabefofoon.github.io/proto_images/imgs/thumb9.png">
             <p><span>Poster</span><br/>답답할 땐:</p>
           </li>
-          <li value="4" style='cursor:pointer;'>
+          <li value="4" style='cursor:pointer;' onclick='thumbnail_slide(9)'>
             <img src="https://zabefofoon.github.io/proto_images/imgs/thumb10.jpg">
             <p><span>Product</span><br/>칠성 목공예 귀걸이</p>
           </li>
-          <li value="5" style='cursor:pointer;'>
+          <li value="5" style='cursor:pointer;' onclick='thumbnail_slide(10)'>
             <img src="https://zabefofoon.github.io/proto_images/imgs/thumb11.png">
             <p><span>Planning</span><br/>칠성 X 익스트림 스포츠</p>
           </li>
-          <li value="5" style='cursor:pointer;'>
+          <li value="5" style='cursor:pointer;' onclick='thumbnail_slide(11)'>
             <img src="https://zabefofoon.github.io/proto_images/imgs/thumb12.png">
             <p><span>Planning</span><br/>북두칠성사이다</p>
           </li>
-          <li value="4" style='cursor:pointer;'>
+          <li value="4" style='cursor:pointer;' onclick='thumbnail_slide(12)'>
             <img src="https://zabefofoon.github.io/proto_images/imgs/thumb13.png">
             <p><span>Product</span><br/>쓸데없는 굿즈</p>
           </li>
-          <li value="3" style='cursor:pointer;'>
+          <li value="3" style='cursor:pointer;' onclick='thumbnail_slide(13)'>
             <img src="https://zabefofoon.github.io/proto_images/imgs/thumb14.png">
             <p><span>Video</span><br/>Go! 사이다맨</p>
           </li>
-          <li value="5" style='cursor:pointer;'>
+          <li value="5" style='cursor:pointer;' onclick='thumbnail_slide(14)'>
             <img src="https://zabefofoon.github.io/proto_images/imgs/thumb15.png">
             <p><span>Planning</span><br/>충성사이다</p>
           </li>
