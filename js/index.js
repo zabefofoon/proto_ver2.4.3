@@ -1,8 +1,8 @@
 $(document).ready(function(){
   var c = $('html').scrollTop();
-  $(window).click(function(e){
+  $(window).on("click",function(e){
     function thumbnail_slide(num){
-      if(e.target == $(".slide ul li")[0] && e.target.value == num || e.target == $(".thumbnail li")[num]){
+      if(e.target == $(".thumbnail li")[num]){
         $(".fullsolid").css({"opacity":"0.8","pointer-events":"auto"});
         $(".detail").css({"display":"block","z-index":99}).delay(300).animate({"opacity":1});
         $(".detail").scrollTop(0).load("./data/"+parseInt(num+1)+".html");
@@ -14,24 +14,18 @@ $(document).ready(function(){
       thumbnail_slide(i)
     };
 
-    if(e.target == $(".slide li")[0]){
-      $(".fullsolid").css({"opacity":"0.8","pointer-events":"auto"});
-      $(".thumbnail li").css({"display":"inline-block"});
-      $(".button li").css({"background":"#ddddde","color":"black"});
-      $(".button li").eq(0).css({"background":"#097c25","color":"white"});
-    }
-
     if(e.target == $(".fullsolid")[0]||e.target == $(".fa-times")[0]||e.target==$("nav i")[0]){
       $(".navwrap").stop().animate({"left":"-100%"},500);
       $(".fullsolid").css({"opacity":"0","pointer-events":"none"});
       $(".detail").css({"display":"none","z-index":-1,"opacity":0});
       $(".fa-times").css({"display":"none","z-index":"-1"});
-      $("html").removeClass('modal-open')
+      $("html").removeClass('modal-open');
     }
     if(e.target == $("nav i")[0]){
       $(".navwrap").stop().animate({"left":0},500);
       $(".fullsolid").css({"opacity":"0.8","pointer-events":"auto"});
-    }else if(e.target == $(".navwrap")[0] || e.target == $(".navwrap a")[0] || e.target == $(".navwrap a")[1] || e.target == $(".navwrap a")[2]){
+    }
+    else if(e.target == $(".navwrap")[0] || e.target == $(".navwrap a")[0] || e.target == $(".navwrap a")[1] || e.target == $(".navwrap a")[2]){
       $(".navwrap").stop().animate({"left":"-100%"},500);
       $(".fullsolid").css({"opacity":"0","pointer-events":"none"});
     }
@@ -76,7 +70,7 @@ $(document).ready(function(){
         }
       }
     }
-    if(e.target.value ==0){
+    if(e.target.value == 0){
       $(".thumbnail li").css({"display":"inline-block"});
     }
     for(var i=1;i<6;i++){
